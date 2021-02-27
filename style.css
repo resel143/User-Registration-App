@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: auto;
+  /* text-align: center; */
+  background-color: #111;
+}
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #3edad8;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+
+  /* align-items: center; */
+  text-align: center;
+}
+h1 i {
+  color: #3edad8;
+}
+#addUser {
+  width: 100%;
+  margin: auto;
+}
+
+button[type="submit"] {
+  /* outline: none; */
+  border: none;
+  background-color: transparent;
+}
+.collection-item:nth-child(odd) {
+  background-color: #336177 !important;
+  border: none;
+}
+.collection-item:nth-child(even) {
+  border: none;
+  background-color: #2a5164 !important;
+  /* color: #26a69a; */
+}
+#userList {
+  border: none;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
