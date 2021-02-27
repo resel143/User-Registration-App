@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  Link -->
+     <link
+       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Icons Link -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>User Adder!</title>
+  </head>
+  <body>
+    <h1><i class="medium material-icons"> account_circle </i>User Storage</h1>
+    <!-- Section For Users -->
+    <section class="users">
+      <div id="addUser" class="row">
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Add New User</span>
+              <div class="row">
+                <!-- User Input  -->
+                <form id="userInput">
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input
+                      
+                        id="first_name"
+                        type="text"
+                        class="validate"
+                      />
+                      <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="last_name" type="text" class="validate" />
+                      <label for="last_name">Last Name</label>
+                    </div>
+                  </div>
+                  
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="password" type="password" class="validate" />
+                      <label for="password">Password</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input id="email" type="email" class="validate" />
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+
+                  <button
+                    class="btn waves-effect waves-light green"
+                    type="submit"
+                    name="action"
+                  >
+                    Add User
+                    <i class="material-icons right">add</i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">User List</span>
+              <!-- Search for Existing User -->
+              <div id="searchUser" class="input-field ">
+                <i class="material-icons prefix">search</i>
+                <input
+                  type="text"
+                  id="autocomplete-input"
+                 class="search-user"
+                />
+                <label for="autocomplete-input">Autocomplete</label>
+              </div>
+              <ul id="userList" class="collection">
+                <li class="collection-item avatar">
+                  <i class="medium material-icons circle green"
+                    >account_circle</i
+                  >
+                 
+                  <ul class="user-info">
+                    <li class="user-id">User ID</li>
+                    <li>Full Name </li>
+                    <li>Email</li>
+                  </ul>
+                  <a
+                    class="secondary-content btn-floating btn-small waves-effect waves-light red delete-user"
+                    ><i class="material-icons">remove</i></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div id="deleteUsers" class="card-action">
+              <a class="waves-effect waves-light btn-small red"
+                ><i class="material-icons right">account_circle</i>Delete All</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
